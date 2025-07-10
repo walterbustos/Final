@@ -148,14 +148,15 @@ p{
 .ab2 {
     position: absolute;
     width: 50px;
-    left: 750px;
-    top: 450px;
+    left: 550px;
+    top: 250px;
     rotate: 380deg;
 }
 .ab3{
     position: absolute;
-    width: 150px;
+    width: 120px;
     right: 0;
+    rotate: 250deg;
 
 }.about-img{
     width: 50%;
@@ -217,10 +218,10 @@ h2{
 }
 .in3{
     position: absolute;
-    width: 250px;
+    width: 200px;
     left: 0;
-    top: 230px;
-    rotate: 220deg;
+    top: 330px;
+    rotate: 200deg;
 }
 .contact{
     padding: 50px 0;
