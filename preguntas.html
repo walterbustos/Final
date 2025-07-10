@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="menu container">
+            <a href="./index.html" class="logo"><img src="./images/logo.svg" alt=""></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="./images/menu.svg" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a href="./nuestra.html">NUESTRA RECETA</a></li>
+                    <li><a href="./preguntas.html">PREGUNTAS</a></li>
+                    <li><a href="./encontranos.html">ENCONTRANOS</a></li>
+                </ul>
+            </nav>
+            <div class="socials-1">
+                <a href="https://www.instagram.com/elhornito_ok/?hl=es"><img src="./images/r1.svg" alt=""></a>
+                <a href="https://elhornito.com.ar/"><img src="./images/r2.svg" alt=""></a>
+                <a href="https://www.facebook.com/ElHornitoOK/?locale=es_LA"><img src="./images/r3.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="header-content container">
+<div class="faq-container">
+    <h2>Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+    <div class="question">
+        ¿Dónde están ubicados?
+        <span class="arrow">▶</span>
+    </div>
+    <div class="answer">
+        <p>Estamos en la provincia de La Rioja, Argentina, desde 2015 ofreciendo empanadas con receta tradicional.</p>
+    </div>
+    </div>
+
+    <div class="faq-item">
+    <div class="question">
+        ¿Hacen envíos a domicilio?
+        <span class="arrow">▶</span>
+    </div>
+    <div class="answer">
+        <p>Sí, realizamos entregas dentro de la ciudad. Podés coordinar tu pedido por WhatsApp.</p>
+    </div>
+    </div>
+
+    <div class="faq-item">
+    <div class="question">
+        ¿Qué variedades de empanadas ofrecen?
+        <span class="arrow">▶</span>
+    </div>
+    <div class="answer">
+        <p>Ofrecemos empanadas de carne a cuchillo, pollo, jamón y queso, y opciones vegetarianas.</p>
+    </div>
+    </div>
+
+    <div class="faq-item">
+    <div class="question">
+        ¿Puedo hacer pedidos grandes para eventos?
+        <span class="arrow">▶</span>
+    </div>
+    <div class="answer">
+        <p>¡Sí! Hacemos pedidos por mayor para eventos, cumpleaños y reuniones. Recomendamos encargar con anticipación.</p>
+    </div>
+    </div>
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+    item.querySelector('.question').addEventListener('click', () => {
+        item.classList.toggle('active');
+
+        // Cierra otros si querés solo uno abierto a la vez:
+        faqItems.forEach(i => {
+        if (i !== item) i.classList.remove('active');
+        });
+    });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+    </body>
+</html>
+
